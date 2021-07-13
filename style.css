@@ -7,6 +7,7 @@
     --background-blue: #2D25A0;
     --background-white: #F5F5F5;
     --button: #E02C6D;
+    --text-light: #6C6C6C;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -14,9 +15,9 @@ body {
     padding: 0;
 }
 
-/*---------------
+/*--------------------
 Banner Section Styles
------------------*/
+----------------------*/
 .banner {
     background-color: var(--background-blue);
     display: flex;
@@ -43,9 +44,9 @@ Banner Section Styles
     height: 438px;
 }
 
-/*---------------
+/*-----------------------
 Players Section Styles
------------------*/
+------------------------*/
 .players {
     padding: 70px 150px;
     background-color: var(--background-white);
@@ -62,4 +63,32 @@ Players Section Styles
 .player__img img {
     width: 300px;
     height: 256px;
+}
+.player h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.player p {
+    color: var(--text-light);
+}
+
+/*-----------------------
+Footer Section Styles
+------------------------*/
+.footer {
+    text-align: center;
+    font-size: 18px;
+    padding: 60px 0;
+}
+.footer .logo img {
+    width: 470px;
+    height: 110px;
+}
+.footer .social-icons {
+    margin: 0 7px;
+}
+.footer .social-icons i {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
