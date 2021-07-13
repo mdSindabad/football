@@ -4,7 +4,8 @@
 /* Common Styles */
 :root {
     --primary-light: #FFFFFF;
-    --background: #2D25A0;
+    --background-blue: #2D25A0;
+    --background-white: #F5F5F5;
     --button: #E02C6D;
 }
 body {
@@ -14,10 +15,10 @@ body {
 }
 
 /*---------------
-Banner Styles
+Banner Section Styles
 -----------------*/
 .banner {
-    background-color: var(--background);
+    background-color: var(--background-blue);
     display: flex;
     padding: 150px 140px 85px 140px;
 
@@ -40,4 +41,25 @@ Banner Styles
 .banner__img img {
     width: 556.01px;
     height: 438px;
+}
+
+/*---------------
+Players Section Styles
+-----------------*/
+.players {
+    padding: 70px 150px;
+    background-color: var(--background-white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.player {
+    Width: 300px;
+    Height: 426px;
+    background-color: var(--primary-light);
+    padding: 15px;
+}
+.player__img img {
+    width: 300px;
+    height: 256px;
 }
