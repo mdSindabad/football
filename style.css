@@ -13,6 +13,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.button {
+    text-decoration: none;
+    background: var(--button);
+    padding: 10px 24px;
+    color: var(--primary-light);
 }
 
 /*--------------------
@@ -21,8 +29,7 @@ Banner Section Styles
 .banner {
     background-color: var(--background-blue);
     display: flex;
-    padding: 150px 140px 85px 140px;
-
+    padding: 150px 140px 85px 140px; 
 }
 .banner__title {
     margin-right: 30px;
@@ -33,14 +40,8 @@ Banner Section Styles
     line-height: 80px;
     color: var(--primary-light);
     }
-.banner__title a {
-    text-decoration: none;
-    background: var(--button);
-    padding: 10px 24px;
-    color: var(--primary-light);
-}
 .banner__img img {
-    width: 556.01px;
+    width: 556px;
     height: 438px;
 }
 
@@ -56,7 +57,7 @@ Players Section Styles
 }
 .player {
     Width: 300px;
-    Height: 426px;
+    /* Height: 426px; */
     background-color: var(--primary-light);
     padding: 15px;
 }
@@ -70,6 +71,27 @@ Players Section Styles
 }
 .player p {
     color: var(--text-light);
+}
+
+/*-----------------------
+Highlights Section Styles
+------------------------*/
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 150px;
+    grid-gap: 40px;
+    background-color: var(--background-white);
+}
+.highlights__info h2 {
+    font-size: 48px;
+}
+.highlights__info a.button {
+    margin-top: 24px;
+}
+.highlights__img img {
+    Width: 567px;
+    Height: 427px
 }
 
 /*-----------------------
@@ -91,4 +113,43 @@ Footer Section Styles
     width: 32px;
     height: 32px;
     cursor: pointer;
+}
+
+/*-----------------------
+Responsive Styles
+------------------------*/
+/* Mobile Phone */
+@media only screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 15px;
+    }
+    .banner__title h1 {
+        font-size: 36px;
+        }
+    .banner__img img,
+    .highlights__img img {
+        margin-top: 50px;
+        max-width: 100%;
+        height: 100%;
+    }
+    .players,
+    .highlights {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        padding: 0 25px;
+    }
+    .player {
+        max-width: 100%;
+        margin: auto;
+    }
+    .highlights__info h2 {
+        font-size: 30px;
+    }
+    .footer .logo img {
+        width: 50%;
+        height: 50%;
+    }
 }
