@@ -141,6 +141,26 @@ Players Section Styles
 }
 
 /*-----------------------
+Sponsors Section Styles
+------------------------*/
+.sponsors {
+    padding: 50px 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sponsors__item {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sponsor img {
+    width: 100%;
+}
+
+/*-----------------------
 Highlights Section Styles
 ------------------------*/
 .highlights {
@@ -160,6 +180,8 @@ Highlights Section Styles
     Width: 567px;
     Height: 427px
 }
+
+
 
 /*-----------------------
 Footer Section Styles
@@ -229,6 +251,13 @@ Responsive Styles
         max-width: 100%;
         margin: auto;
     }
+    .sponsors {
+        padding: 10px 20px;
+        justify-content: center;
+    }
+    .sponsors__item {
+        width: 100%;
+    }
     .highlights__info h2 {
         font-size: 30px;
     }
@@ -270,6 +299,13 @@ Responsive Styles
     .player {
         max-width: 100%;
         margin: auto;
+    }
+    .sponsors {
+        padding: 20px 30px;
+        /* justify-content: center; */
+    }
+    .sponsors__item {
+        width: 50%;
     }
     .highlights__info h2 {
         font-size: 30px;
