@@ -192,13 +192,13 @@ Responsive Styles
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
     .banner {
-        /* flex-direction: column; */
         max-width: 100%;
         padding: 35px;
     }
     .banner__title h1 {
         font-size: 36px;
         line-height: 45px;
+        margin-bottom: 50px;
     }
     .banner__img img,
     .highlights__img img {
