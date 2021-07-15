@@ -246,7 +246,7 @@ Responsive Styles
 ------------------------*/
 
 /* Tablet */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .mobile-menu {
         display: block;
     }
@@ -352,7 +352,11 @@ Responsive Styles
         font-size: 30px;
     }
     .news__items {
+        display: grid;
         grid-template-columns: 1fr;
+    }
+    .news__item {
+        width: 100%;
     }
     .footer .logo img {
         width: 50%;
