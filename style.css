@@ -40,6 +40,45 @@ body {
 .button:hover i {
     transform: translateX(20px);
 }
+.button.login:hover {
+    padding-left: 50px;
+}
+.button.login:hover i {
+    transform: translateX(-20px);
+}
+
+/*--------------------
+Header Section Styles
+----------------------*/
+.header {
+    background-color: var(--background-blue);
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-menu {
+    font-size: 20px;
+    color: var(--primary-light);
+    cursor: pointer;
+    display: none;
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+.menu ul li {
+    margin: 0 18px;
+}
+.menu ul li a {
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: var(--primary-light);
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+.menu ul li a:hover {
+    background: var(--button);
+}
 
 /*--------------------
 Banner Section Styles
@@ -47,7 +86,7 @@ Banner Section Styles
 .banner {
     background-color: var(--background-blue);
     display: flex;
-    padding: 150px 140px 85px 140px; 
+    padding: 100px 140px 85px 140px; 
 }
 .banner__title {
     margin-right: 30px;
@@ -154,6 +193,12 @@ Responsive Styles
 ------------------------*/
 /* Mobile Phone */
 @media only screen and (max-width: 576px) {
+    .mobile-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
     .banner {
         flex-direction: column;
         max-width: 100%;
@@ -191,6 +236,12 @@ Responsive Styles
 }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .mobile-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
     .banner {
         max-width: 100%;
         padding: 35px;
