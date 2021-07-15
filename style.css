@@ -244,6 +244,65 @@ Footer Section Styles
 /*-----------------------
 Responsive Styles
 ------------------------*/
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    .mobile-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .banner {
+        max-width: 100%;
+        padding: 35px;
+    }
+    .banner__title h1 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 50px;
+    }
+    .banner__img img,
+    .highlights__img img {
+        margin-top: 50px;
+        max-width: 80%;
+        height: 80%;
+    }
+    .players,
+    .highlights {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        padding: 0 25px;
+    }
+    .player {
+        max-width: 100%;
+        margin: auto;
+    }
+    .sponsors {
+        padding: 20px 30px;
+    }
+    .sponsors__item {
+        width: 50%;
+    }
+    .highlights__info h2 {
+        font-size: 30px;
+    }
+    .news__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .news__item {
+        width:45%;
+        margin-bottom: 10px;
+    }
+    .footer .logo img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 /* Mobile Phone */
 @media only screen and (max-width: 576px) {
     .header {
@@ -294,63 +353,6 @@ Responsive Styles
     }
     .news__items {
         grid-template-columns: 1fr;
-    }
-    .footer .logo img {
-        width: 50%;
-        height: 50%;
-    }
-}
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
-    .mobile-menu {
-        display: block;
-    }
-    .menu {
-        display: none;
-    }
-    .banner {
-        max-width: 100%;
-        padding: 35px;
-    }
-    .banner__title h1 {
-        font-size: 36px;
-        line-height: 45px;
-        margin-bottom: 50px;
-    }
-    .banner__img img,
-    .highlights__img img {
-        margin-top: 50px;
-        max-width: 80%;
-        height: 80%;
-    }
-    .players,
-    .highlights {
-        max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 24px;
-        padding: 0 25px;
-    }
-    .player {
-        max-width: 100%;
-        margin: auto;
-    }
-    .sponsors {
-        padding: 20px 30px;
-    }
-    .sponsors__item {
-        width: 50%;
-    }
-    .highlights__info h2 {
-        font-size: 30px;
-    }
-    .news__items {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .news__item {
-        width:45%;
-        margin-bottom: 10px;
     }
     .footer .logo img {
         width: 50%;
